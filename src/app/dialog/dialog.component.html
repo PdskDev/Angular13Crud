@@ -1,0 +1,59 @@
+<h1 mat-dialog-title>Nouveau Produit</h1>
+<div mat-dialog-content>
+  <form [formGroup]="productForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Nom</mat-label>
+      <input matInput formControlName="name" placeholder="Nom du produit" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Catégorie</mat-label>
+      <mat-select formControlName="category" placeholder="Catégorie">
+        <mat-option value="Console de jeux">Console de jeux</mat-option>
+        <mat-option value="Telephone">Téléphone</mat-option>
+        <mat-option value="Television">Télévision</mat-option>
+        <mat-option value="Informatique">Informatique</mat-option>
+        <mat-option value="Son et Image">Son et Image</mat-option>
+        <mat-option value="Autre">Autre</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Date</mat-label>
+      <input matInput formControlName="date" [matDatepicker]="picker" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <label for=""><h1>Etat</h1></label>
+    <mat-radio-group formControlName="condition" class="example-radio-group">
+      <mat-radio-button
+        class="example-radio-button"
+        *ngFor="let ProductCondition of ProductConditionListing"
+        value="ProductCondition"
+        >{{ ProductCondition }}</mat-radio-button
+      >
+    </mat-radio-group>
+    <mat-form-field appearance="outline">
+      <mat-label>Prix</mat-label>
+      <input
+        matInput
+        formControlName="price"
+        type="number"
+        placeholder="Prix de vente"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Commentaire</mat-label>
+      <textarea matInput formControlName="comment"></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Annuler</button>
+  <button
+    style="margin-left: 8px"
+    mat-raised-button
+    color="primary"
+    (click)="addProduct()"
+  >
+    Enregistrer
+  </button>
+</div>

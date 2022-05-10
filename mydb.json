@@ -1,0 +1,23 @@
+{
+  "productList": [
+    {
+      "name": "GameBoy",
+      "category": "Console de jeux",
+      "condition": "ProductCondition",
+      "price": 99,
+      "date": "2022-04-30T22:00:00.000Z",
+      "comment": "Console de jeux vidéos portable mythique.",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
