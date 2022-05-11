@@ -1,21 +1,12 @@
 {
   "productList": [
     {
-      "name": "GameBoy",
-      "category": "Console de jeux",
-      "condition": "Reconditionne",
-      "price": 99,
-      "date": "2022-04-30T22:00:00.000Z",
-      "comment": "Console de jeux vidéos portable mythique.",
-      "id": 1
-    },
-    {
-      "name": "Smart TV 50 pouces",
+      "name": "Smart TV 55 pouces avec Android TV",
       "category": "Television",
       "condition": "Occasion",
-      "price": 150,
-      "date": "2022-05-05T22:00:00.000Z",
-      "comment": "Android Télévision LCD 50 pouces connectée",
+      "price": 99,
+      "date": "2022-04-09T22:00:00.000Z",
+      "comment": "Télévision Smart LCD 55 pouces connectée de bonne qualité d'image et de son",
       "id": 2
     },
     {
@@ -24,17 +15,8 @@
       "condition": "Reconditionne",
       "price": 59,
       "date": "2022-05-05T22:00:00.000Z",
-      "comment": "Téléphone mobile branché avec des fonctionnalités avancées",
+      "comment": "Téléphone mobile avancé",
       "id": 3
-    },
-    {
-      "name": "Camera Sony 68px",
-      "category": "Son et Image",
-      "condition": "Occasion",
-      "price": 39,
-      "date": "2022-05-05T22:00:00.000Z",
-      "comment": "Appareil photo numérique avec de grandes capacités de prise de vue.",
-      "id": 4
     },
     {
       "name": "Ordinateur portable 15.6 pouces i5 4Go RAM 500 Go HDD",
@@ -42,17 +24,8 @@
       "condition": "Reconditionne",
       "price": 269,
       "date": "2022-02-28T23:00:00.000Z",
-      "comment": "Ordinateur portable professionnel et robuste pour parachever tous vos travaux.",
+      "comment": "Ordinateur portable professionnel.",
       "id": 5
-    },
-    {
-      "name": "Voiture de sport F1 télécommandé",
-      "category": "Autre",
-      "condition": "Nouveau",
-      "price": 15,
-      "date": "2022-02-09T23:00:00.000Z",
-      "comment": "Jouet de collection neuf dans son emballage d'origine",
-      "id": 6
     },
     {
       "name": "Figurine Petit Bonhomme bleu",
@@ -60,8 +33,53 @@
       "condition": "Occasion",
       "price": 3,
       "date": "2022-03-12T23:00:00.000Z",
-      "comment": "Figure de dessin animé culte des années 1980. Trophée de collection.",
+      "comment": "Figure de dessin animé culte.",
       "id": 7
+    },
+    {
+      "name": "Samsung S9 5 pouces",
+      "category": "Television",
+      "condition": "Reconditionné",
+      "price": 59,
+      "date": "2022-05-05T22:00:00.000Z",
+      "comment": "Téléphone mobile avancé",
+      "id": 8
+    },
+    {
+      "name": "PlayStation 4",
+      "category": "Console de jeux",
+      "condition": "Reconditionné",
+      "price": 299,
+      "date": "2022-03-12T23:00:00.000Z",
+      "comment": "Console de jeux en parfait état pour vos moments de détente entre amis ou en famille.",
+      "id": 9
+    },
+    {
+      "name": "IPod",
+      "category": "Son et Image",
+      "condition": "Occasion",
+      "price": 25,
+      "date": "2022-02-05T23:00:00.000Z",
+      "comment": "Voyager avec votre musique",
+      "id": 10
+    },
+    {
+      "name": "Ipod 60Go",
+      "category": "Son et Image",
+      "condition": "Reconditionné",
+      "price": 39,
+      "date": "2022-04-30T22:00:00.000Z",
+      "comment": "Le son de rêve à emporter partout avec vous",
+      "id": 11
+    },
+    {
+      "name": "HP i5 Portable 15.6",
+      "category": "Informatique",
+      "condition": "Reconditionné",
+      "price": 299,
+      "date": "2022-05-14T22:00:00.000Z",
+      "comment": "PC portable professionnel",
+      "id": 12
     }
   ],
   "comments": [

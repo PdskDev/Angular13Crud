@@ -6,6 +6,7 @@ import { ApiService } from './services/api.service';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ export class AppComponent implements OnInit {
     'condition',
     'price',
     'comment',
+    'action',
   ];
   dataSource!: MatTableDataSource<any>;
 
@@ -35,9 +37,16 @@ export class AppComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(DialogComponent, {
-      width: '35%',
-    });
+    this.dialog
+      .open(DialogComponent, {
+        width: '35%',
+      })
+      .afterClosed()
+      .subscribe((val) => {
+        if (val === 'edit' || val == 'add') {
+          this.getAllProducts();
+        }
+      });
   }
 
   getAllProducts() {
@@ -49,6 +58,32 @@ export class AppComponent implements OnInit {
       },
       error: (err) => {
         console.log(err);
+      },
+    });
+  }
+
+  editProduct(row: any) {
+    this.dialog
+      .open(DialogComponent, {
+        width: '35%',
+        data: row,
+      })
+      .afterClosed()
+      .subscribe((val) => {
+        if (val === 'edit') {
+          this.getAllProducts();
+        }
+      });
+  }
+
+  deleteProduct(id: number) {
+    this.api.deleteProduct(id).subscribe({
+      next: (res) => {
+        alert('Le produit a été supprimé avec succès');
+        this.getAllProducts();
+      },
+      error: (err) => {
+        alert('Une erreur est survenue. La suppression du produit a échoué');
       },
     });
   }
